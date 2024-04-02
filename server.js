@@ -50,7 +50,8 @@ app.use("/public/fonts", express.static(__dirname + "/public/fonts"));
 app.set("view engine", "ejs");
 
 // main URL of website
-var mainURL = "http://localhost:3000";
+// var mainURL = "http://localhost:3000";
+var mainURL = process.env.BASE_URL;
 
 // global database object
 var database = null;
